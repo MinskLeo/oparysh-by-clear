@@ -1,0 +1,89 @@
+MySQL DB:
+
+# categories
+_id --- int(11), PrimaryKey, AutoIncrement, NotNull
+name --- char(45)
+link  --- char(45)
+description --- mediumtext
+
+Defaults:
+name: NULL
+link: NULL
+description: NULL
+
+
+
+# formdata
+_id --- int(11), PrimaryKey, AutoIncrement, NotNull
+name --- char(45)
+phone --- char(15)
+email --- char(25)
+message --- text
+openedDate --- date
+status --- text
+
+Defaults:
+name: NULL
+phone: NULL
+email: NULL
+message: NULL
+openedDate: NULL
+status: NULL
+
+
+
+
+# products
+_id --- int(11), PrimaryKey, AutoIncrement, NotNull
+name --- char(45)
+price --- int(11)
+category --- char(45)
+description --- mediumtext
+image --- text
+
+Defaults:
+name: NULL
+price: NULL
+category: NULL
+description: NULL
+image: NULL
+
+
+
+
+
+
+
+MongoDB:
+
+# products
+const Product = mongoose.model('Product', {
+  name: String,
+  image: String,
+  description: String,
+  price: Number,
+  category: String
+ });
+
+
+
+# categories
+const Category = mongoose.model('Category', {
+  name: String,
+  link: String,
+  description: String
+});
+
+
+
+
+# formdatas
+const FormData = mongoose.model('FormData',{
+  name: String,
+  phone: String,
+  email: String,
+  message: String,
+  dateOfReg: Date,
+  dateFinal: Date,
+  status: String
+})
