@@ -1,0 +1,175 @@
+.ChangeDataWindow{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(238, 238, 238, 0.4); */
+  background: rgba(51, 51, 51, 0.6);
+  z-index: 20500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  position: relative;
+  background: #eee;
+  box-shadow: 0 0 20px #333;
+  border-radius: 2px;
+  padding: 25px 0;
+  padding-left: 10px;
+}
+.form__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.form__text{
+  width: 100%;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 8px;
+  padding-left: 15px;
+}
+.form__text:active{
+  outline-color: #007bff;
+}
+
+/* SELECT */
+.form__select{
+  width: 300px;
+  box-shadow: 0 0 2px rgb(207, 207, 207);
+}
+.select__opener{
+  width: 100%;
+  padding: 7px;
+  font-size: 18px;
+  border: none;
+  background: rgb(219, 219, 219);
+  outline: none !important;
+}
+.select__opener:hover{
+  background: rgb(210, 210, 210);
+}
+.select__options{
+  list-style: none;
+  background: rgb(228, 228, 228);
+  margin: 0;
+  overflow: hidden;
+  max-height: 0px;
+
+  transition: max-height 300ms ease-in-out 0s;
+}
+.options__option{
+  font-size: 18px;
+  text-align: center;
+}
+
+.option__button{
+  width: 100%;
+  padding: 7px;
+  border: none;
+  background: transparent;
+  outline: none !important;
+  text-align: left;
+  padding-left: 30px;
+}
+.option__button:hover {
+  background: rgb(216, 216, 216);
+}
+
+.form__button{
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 17px;
+  width: 200px;
+  padding: 10px 0;
+  margin: 10px;
+  border: none;
+  color: #eee;
+  outline: none !important;
+  transition: top 40ms ease-in-out 0s,
+  left 40ms ease-in-out 0s,
+  box-shadow 40ms ease-in-out 0s;
+
+  background: rgb(8, 160, 160);
+  box-shadow: 7px 7px 2px rgb(7, 99, 99);
+}
+.form__button:active{
+  top: 4px;
+  left: 4px;
+  box-shadow: 2px 2px 2px rgb(7, 99, 99);
+}
+.form__button-del{
+  background: rgb(243, 46, 46);
+  box-shadow: 7px 7px 2px rgb(173, 3, 3);
+}
+.form__button-del:active{
+  top: 4px;
+  left: 4px;
+  box-shadow: 2px 2px 2px rgb(173, 3, 3) !important;
+}
+.fixedCard{
+  min-width: 90%;
+  min-height: 300px;
+}
+.fixedCard img{
+  min-height: 0;
+  padding: 0;
+}
+
+
+
+.form__button-fileinput {
+  font-size: 17px;
+  margin: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  background: rgb(199, 199, 199);
+  color: #333;
+  box-shadow: 7px 7px 2px rgb(167, 167, 167);
+  margin-left: -10px;
+}
+.form__button-fileinput:active{
+  box-shadow: 3px 3px 2px rgb(167, 167, 167);
+}
+.row-100{
+  width: 100%;
+
+  
+}
+.row-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-column{
+  flex-direction: column;
+}
+.form__inputFileValue{
+  font-style: italic;
+}
+
+
+.closeChangeDataWindow{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  margin-right: 20px;
+  z-index: 25000;
+  font-size: 40px;
+}
+.closeChangeDataWindow .fa-times{
+  cursor: pointer;
+}
+.closeChangeDataWindow:hover .fa-times{
+  color: rgb(243, 46, 46);
+}
+.closeChangeDataWindow .fa-times:active{
+  color: rgb(209, 36, 36);
+  transform: scale(1.05);
+}

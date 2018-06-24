@@ -1,0 +1,84 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.card_container {
+  padding-top: 30px;
+  transition: transform 100ms ease-in-out 0s;
+}
+
+.card_container:hover{
+  transform: scale(1.05);
+}
+
+.card:hover .cardmask {
+  opacity: 1;
+}
+
+.cardmask {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.150);
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 200ms linear 0s;
+}
+
+.cardmask__wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+}
+
+.cardmask__wrapper .fas {
+  margin: 0 15px;
+  cursor: pointer;
+  color: white;
+}
+
+.cardmask__wrapper .fas:hover {
+  color: rgb(8, 160, 160);
+}
+/* .cardmask__wrapper .fa-pencil-alt:hover {
+  color: #007bff;
+}
+.cardmask__wrapper .fa-trash-alt:hover{
+  color: red;
+} */
+
+/* DEBUG */
+/* .contentPart{
+  transition: marginTop 500ms linear 0s;
+} */
+
+.addProductContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  
+}
+.addProductContainer .fa-plus-square{
+  transition: transform 100ms ease-in-out 0s;
+  cursor: pointer;
+  margin: 10px;
+}
+.addProductContainer .fa-plus-square:hover{
+  transform: scale(1.1);
+  color:#007bff;
+}

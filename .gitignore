@@ -1,0 +1,10 @@
+﻿# Server
+/server/node_modules
+
+# Client React
+/client-react/node_modules
+/client-react/build
+
+# Client Vue
+/client-vue/node_modules
+/client-vue/dist

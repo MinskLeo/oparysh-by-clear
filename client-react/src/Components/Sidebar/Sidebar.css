@@ -1,0 +1,35 @@
+.Sidebar {
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.Sidebar__catContainer {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.catContainer__li {
+  width: 100%;
+}
+
+.catContainer__button {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none !important;
+  color: #333;
+}
+
+.catContainer__button:hover {
+  background: rgb(216, 216, 216);
+  color: #007bff;
+}

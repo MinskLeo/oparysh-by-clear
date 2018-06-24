@@ -1,0 +1,43 @@
+Catalog,
+.Panel{
+  width: 100vw;
+  height: 100vh;
+}
+.contentPart {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.Panel__contentPart{
+  flex-direction: row;
+}
+.contentPart__block{
+  padding: 30px;
+  max-width: 300px;
+  box-shadow: 0 0 2px rgb(185, 185, 185);
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 15px;
+
+  transition: transform 110ms linear 0s;
+}
+.contentPart__block:hover{
+  /* transform: scale(1.1); */
+}
+.block__title {
+  margin: 10px 0;
+  text-decoration: none;
+}
+.block__description{
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+}

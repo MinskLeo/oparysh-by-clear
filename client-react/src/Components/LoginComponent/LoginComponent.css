@@ -1,0 +1,45 @@
+.LoginComponent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* background: #eee; */
+}
+.LoginComponent__container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: opacity 300ms linear 0s;
+}
+.LoginComponent input{
+  display: block;
+  width: 100%;
+  font-size: 25px;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 5px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.LoginComponent button{
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 9px 0;
+  border: none;
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 5px 5px 3px;
+  border: 1px solid rgb(219, 219, 219);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 90ms ease-in-out 0s;
+}
+.LoginComponent button:active{
+  top: 4px;
+  left: 4px;
+  box-shadow: 2px 2px 3px;
+}

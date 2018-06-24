@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- Bootstrap end -->
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Наживки, купить наживку для рыбалки оптом Минск </title>
+</head>
+
+<body>
+
+
+  <div class="wrap">
+    <div class="container-fluid">
+      <% include partials/header %>
+      <div class="M_nav_bar row">
+        <input type="checkbox" name="toggle" id="m_btn" value="value">
+        <label for="m_btn"> <i class="fas fa-bars"></i> </label>
+        <div class="row"  id="toggle">
+        <div class="col-sm-12 text-left">
+          <a href="/company">О компании</a>
+        </div>
+        <div class="col-sm-12 text-left">
+          <a href="/cooperation" >Cотрудничество</a>
+        </div>
+        <div class="col-sm-12 text-left">
+         <a href="/contacts" >Контакты</a>
+        </div>
+        <div class="col-sm-12 text-left">
+         <a href="/buy" >Где купить</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="container Content">
+        <!-- title -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center feedbackForm__title">Где купить</h1>
+          </div>
+        </div>
+
+        <!-- description -->
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center feedbackForm__text">Купить нашу продукцию можно во многих магазинах. Доставка по всей Беларуси</p>
+          </div>
+        </div>
+
+        <!-- OR -->
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center feedbackForm__text feedbackForm__text-big" style="color: rgb(173,10,173);">ИЛИ</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center feedbackForm__text">Вы можете воспользоваться формой ниже и мы Вам сами перезвоним!</p>
+          </div>
+        </div>
+
+        <!-- form -->
+        <div class="row feedbackForm">
+          <div class="col-md-12">
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label for="formName" class="input-group-text">Имя</label>
+              </div>
+              <input type="text" id="formName" class="form-control" placeholder="напр. Андрей">
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label for="formPhone" class="input-group-text">Телефон</label>
+              </div>
+              <input type="text" id="formPhone" class="form-control" placeholder="напр. +375296655275">
+            </div>
+
+            <!-- <input type="text" id="formName" class="form-control" placeholder="Имя"> -->
+
+            <!-- <input type="text" class="form-control" placeholder="Телефон"> -->
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label for="formEmail" class="input-group-text">Email</label>
+              </div>
+              <input type="text" class="form-control" id="formEmail" placeholder="напр. oparysh@opop.by">
+            </div>
+
+            <div class="form-group">
+              <label for="formTextArea1">Сообщение (не обязательно)</label>
+              <textarea class="form-control" id="formMessage" rows="3" autocomplete="false"></textarea>
+            </div>
+          </div>
+
+          <button class="feedbackForm__button-submit-purple" id="submitBtn">Отправить</button>
+        </div>
+      </div>
+    </div>
+        <% include partials/footer %>
+  </div>
+
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/sendForm.js"></script>
+  <script type="text/javascript" src="/js/m_menu.js"></script>
+</body>
+
+</html>
